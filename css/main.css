@@ -2388,7 +2388,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .info-area .info-content:after {
   content: "";
-  box-shadow: -35.355px 35.355px 50px 0px rgba(157, 157, 157, 0.3);
+  /* box-shadow: -35.355px 35.355px 50px 0px rgba(157, 157, 157, 0.3); */
   position: absolute;
   right: 100%;
   top: 0;
