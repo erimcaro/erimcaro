@@ -277,7 +277,7 @@ $(document).ready(function(){
     fadeElements.each(function() {
       const element = $(this);
       if (element.isInViewport() && !element.hasClass('visible')) {
-        element.hide().fadeIn(3000).addClass('visible').css({ transform: 'translate(0px, 20px)' });
+        element.hide().fadeIn(3000).addClass('visible');
       }
     });
   }
