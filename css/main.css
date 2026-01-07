@@ -2962,3 +2962,7 @@ h6 {
   width: 100%;
   text-align: center;
 }
+
+.fade-in {
+  /* stub for the jq hook */
+}

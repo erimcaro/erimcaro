@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 	"use strict";
 
@@ -256,13 +255,34 @@ $(document).ready(function(){
 
         $(document).ready(function() {
             $('#mc_embed_signup').find('form').ajaxChimp();
+
+            // $('.fade-in').each(function() {
+            //     $(this).css('opacity', 0);
+            // });
         });      
 
 
+  $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
 
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
 
+    return (viewportTop <= elementTop && elementTop <= viewportBottom) || (viewportTop <= elementBottom && elementBottom <= viewportBottom);
+  };
 
+  function handleScroll() {
+    const fadeElements = $('.fade-in');
+    fadeElements.each(function() {
+      const element = $(this);
+      if (element.isInViewport() && !element.hasClass('visible')) {
+        element.hide().fadeIn(3000).addClass('visible').css({ transform: 'translate(0px, 20px)' });
+      }
+    });
+  }
 
+  window.addEventListener('scroll', handleScroll);
 
-
+  handleScroll();
  });
