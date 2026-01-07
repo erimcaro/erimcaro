@@ -2363,7 +2363,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .primary-btn:hover {
-  border: 1px solid #070707;
+  border: 1px solid #151515;
   background: transparent;
   color: #1509b8;
 }
@@ -2377,6 +2377,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   .info-area .info-content {
     text-align: left;
     padding: 80px 30px 80px 0;
+  }
+  .primary-btn {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
   }
 }
 
