@@ -117,7 +117,7 @@ a, a:focus, a:hover {
 }
 
 h1, h2, h3,
-h4, h5, h6, h7 {
+h4, h5, h6, h7 .h8 {
   font-family: "Fondamento", cursive;
   color: #222222;
   line-height: 1.2em !important;
@@ -127,7 +127,7 @@ h4, h5, h6, h7 {
 }
 
 .h1, .h2, .h3,
-.h4, .h5, .h6 .h7 {
+.h4, .h5, .h6 .h7 .h8 {
   margin-bottom: 0;
   margin-top: 0;
   font-family: "Oswald", sans-serif;
@@ -164,6 +164,13 @@ h6, .h6 {
 h7, .h7 {
  font-size: 30px;
  font-style: italic
+}
+
+h8, .h8 {
+ font-size: 45px;
+ font-style: cursive
+ color: #222222;
+
 }
 
 td, th {
@@ -2196,7 +2203,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-.p1-gradient-bg, .primary-btn, .banner-area, .single-price:hover .price-bottom, .call-to-action-area, .single-footer-widget .click-btn, .generic-banner {
+.p1-gradient-bg, .primary-btn, .banner-area, .banner-faq .single-price:hover .price-bottom, .call-to-action-area, .single-footer-widget .click-btn, .generic-banner {
   background-image: -moz-linear-gradient(90deg, #594bf2 0%, #594bf2 75%);
   background-image: -webkit-linear-gradient(90deg, #594bf2 0%, #594bf2 75%);
   background-image: -ms-linear-gradient(90deg, #594bf2 0%, #594bf2 100%);
@@ -2283,6 +2290,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 1199.98px) {
   .banner-area .fullscreen {
     height: 582px !important;
+  }
+}
+
+/* faq banner special */
+
+@media (max-width: 1199.98px) {
+  .banner-faq .fullscreen {
+    height: 100px !important;
   }
 }
 
